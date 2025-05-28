@@ -1,0 +1,7 @@
+{
+  "name": "stockControl",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
