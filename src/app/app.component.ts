@@ -1,12 +1,18 @@
 import { Component } from '@angular/core';
 import { IonApp, IonRouterOutlet } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
-import { notificationsOutline, personOutline, searchOutline } from 'ionicons/icons'
+import { clipboardOutline, createOutline, documentTextOutline, gridOutline, notificationsOutline, personOutline, pricetagOutline, searchOutline, speedometerOutline, swapHorizontalOutline } from 'ionicons/icons'
 
 addIcons({
   'notifications-outline': notificationsOutline,
   'search-outline': searchOutline,
-  'person-outline': personOutline
+  'person-outline': personOutline,
+  'create-outline': createOutline,
+  'pricetags-outline': pricetagOutline,
+  'swap-horizontal-outline': swapHorizontalOutline,
+  'document-text-outline': documentTextOutline,
+  'clipboard-outline': clipboardOutline,
+  'grid-outline': gridOutline
 })
 @Component({
   standalone: true,
