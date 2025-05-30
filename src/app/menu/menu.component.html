@@ -1,3 +1,30 @@
-<p>
-  menu works!
-</p>
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar class="custom-toolbar">
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-accordion-group>
+
+      <ion-item button routerLink="/tela-inicial">
+        <ion-icon name="grid-outline" slot="start"></ion-icon>
+        <ion-label>Tela Inicial</ion-label>
+      </ion-item>
+
+      @for (item of tabela; track $index) {
+      <ion-accordion>
+        <ion-item slot="header" routerLink="/cadastro">
+          <ion-icon [name]="item.icon" slot="start"></ion-icon>
+          <ion-label>{{item.nome}}</ion-label>
+        </ion-item>
+        @for (value of item.items; track $index) {
+        <ion-item slot="content" button>{{value}}</ion-item>
+        }
+      </ion-accordion>
+      }
+
+    </ion-accordion-group>
+
+  </ion-content>
+</ion-menu>

@@ -1,13 +1,13 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HomePage } from './inicio.page';
+import { TelaInicial } from './tela-inicial';
 
 describe('HomePage', () => {
-  let component: HomePage;
-  let fixture: ComponentFixture<HomePage>;
+  let component: TelaInicial;
+  let fixture: ComponentFixture<TelaInicial>;
 
   beforeEach(async () => {
-    fixture = TestBed.createComponent(HomePage);
+    fixture = TestBed.createComponent(TelaInicial);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,0 +1,31 @@
+.custom-toolbar {
+  --background: rgba(7, 64, 74, 255);
+  --color: #FFFFFF;
+}
+
+.iconNotification {
+  width: 24px;
+  height: 24px;
+}
+
+.iconSearch {
+  width: 24px;
+  height: 24px;
+}
+
+.iconPerson {
+  width: 24px;
+  height: 24px;
+}
+
+.containerIcons {
+  display: flex;
+  gap: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .containerIcons {
+    gap: 0px;
+    padding: 0;
+  }
+}
