@@ -7,19 +7,20 @@
   <ion-content>
     <ion-accordion-group>
 
-      <ion-item button routerLink="/tela-inicial">
+      <ion-item button style="--background: rgb(240, 240, 240);" (click)="rota('/tela-inicial')">
         <ion-icon name="grid-outline" slot="start"></ion-icon>
         <ion-label>Tela Inicial</ion-label>
       </ion-item>
 
-      @for (item of tabela; track $index) {
+      @for (value of tabela; track $index) {
       <ion-accordion>
-        <ion-item slot="header" routerLink="/cadastro">
-          <ion-icon [name]="item.icon" slot="start"></ion-icon>
-          <ion-label>{{item.nome}}</ion-label>
+        <ion-item slot="header" routerLink="/cadastro" style="--background: rgb(240, 240, 240);">
+          <ion-icon [name]="value.icon" slot="start"></ion-icon>
+          <ion-label>{{value.nome}}</ion-label>
         </ion-item>
-        @for (value of item.items; track $index) {
-        <ion-item slot="content" button>{{value}}</ion-item>
+        @for (values of value.items; track $index) {
+        <ion-item slot="content" button style="--background: rgb(250, 250, 250);"
+          (click)="rota(values.rota)">{{values.item}}</ion-item>
         }
       </ion-accordion>
       }

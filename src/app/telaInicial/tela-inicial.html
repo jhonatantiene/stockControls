@@ -1,3 +1,64 @@
-<app-menu></app-menu>
 <app-header></app-header>
+<ion-content scrollY="true" class="ion-padding">
+  <div class="kpi-cards">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>3.250</ion-card-title>
+        <ion-card-subtitle>Itens em estoque</ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>
 
+    <ion-card color="warning">
+      <ion-card-header>
+        <ion-card-title>15</ion-card-title>
+        <ion-card-subtitle>Baixo estoque</ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>
+
+    <ion-card color="danger">
+      <ion-card-header>
+        <ion-card-title>8</ion-card-title>
+        <ion-card-subtitle>Fora de estoque</ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>
+
+    <ion-card color="success">
+      <ion-card-header>
+        <ion-card-title>R$ 65.310</ion-card-title>
+        <ion-card-subtitle>Valor total</ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>
+  </div>
+
+  <ion-card class="full-width">
+    <ion-card-header>
+      <ion-card-title>Estoque por Categoria</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      [Gráfico aqui]
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="full-width">
+    <ion-card-header>
+      <ion-card-title>Itens com baixo estoque</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label>
+            <h2>Laptop</h2>
+            <p>Categoria: Eletrônicos – 5 unidades</p>
+          </ion-label>
+        </ion-item>
+        <!-- Outros itens -->
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- <div class="action-buttons">
+    <ion-button expand="block" color="primary">+ Novo Produto</ion-button>
+    <ion-button expand="block" color="success">Entrada</ion-button>
+    <ion-button expand="block" color="danger">Saída</ion-button>
+  </div> -->
+</ion-content>
