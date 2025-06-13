@@ -3,7 +3,6 @@ import { IonApp, IonRouterOutlet } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
 import { clipboardOutline, createOutline, documentTextOutline, gridOutline, notificationsOutline, personOutline, pricetagOutline, searchOutline, swapHorizontalOutline,  } from 'ionicons/icons'
 import { MenuComponent } from './menu/menu.component';
-import { HeaderComponent } from './header/header.component';
 
 addIcons({
   'notifications-outline': notificationsOutline,
@@ -20,7 +19,7 @@ addIcons({
   standalone: true,
   selector: 'app-root',
   templateUrl: 'app.component.html',
-  imports: [IonApp, IonRouterOutlet, MenuComponent, HeaderComponent,],
+  imports: [IonApp, IonRouterOutlet, MenuComponent,],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppComponent {

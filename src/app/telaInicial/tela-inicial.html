@@ -31,28 +31,19 @@
   </div>
 
   <ion-card class="full-width">
-    <ion-card-header>
-      <ion-card-title>Estoque por Categoria</ion-card-title>
-    </ion-card-header>
     <ion-card-content>
-      [Gráfico aqui]
+        <ngx-charts-bar-vertical [results]="dados" [yAxis]="true"  style="width: 100%;"></ngx-charts-bar-vertical>
     </ion-card-content>
   </ion-card>
 
   <ion-card class="full-width">
     <ion-card-header>
-      <ion-card-title>Itens com baixo estoque</ion-card-title>
+      <ion-card-title>Itens fora do estoque</ion-card-title>
     </ion-card-header>
     <ion-card-content>
-      <ion-list>
-        <ion-item>
-          <ion-label>
-            <h2>Laptop</h2>
-            <p>Categoria: Eletrônicos – 5 unidades</p>
-          </ion-label>
-        </ion-item>
-        <!-- Outros itens -->
-      </ion-list>
+
+      grafico aqui
+
     </ion-card-content>
   </ion-card>
 
